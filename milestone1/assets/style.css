@@ -1,10 +1,12 @@
 :root{
     --dark-green:#009688;
+    --light-green: #D5F9BA;
     --bg-grey: #D9DBD4;
     --grey: #B1B1B1;
     --light-grey: #EAEAEA;
     --dark-grey: #7d7d7d;
     --lightblue: #8EDAFC;
+    --white: #ffffff;
 }
 
 .background_webApp{
@@ -119,8 +121,9 @@
 
 /* right column */
 
-.right_column{
+.messages_section{
     background-image: url(./img/mine.jpg);
+    height: 100vh;
 }
 
 .input_chat{
@@ -144,4 +147,23 @@
 
 .input_chat i{
     color: var(--dark-grey);
+}
+
+/* messages */
+.right_messages{
+    text-align: end;
+}
+
+.my_message{
+    max-width: 200px;
+    background-color: var(--light-green);
+    font-size: 14px;
+    text-align: right;
+    max-height: 40px;
+}
+.user_message{
+    max-width: 200px;
+    background-color: var(--white);
+    font-size: 14px;
+    max-height: 40px;
 }

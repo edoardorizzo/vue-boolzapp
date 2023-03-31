@@ -169,8 +169,8 @@
       }
     },
     methods:{
-        spliDate(){
-            const dateParts = this.message.date.split(' ');
+        splitDate(contact, message){
+            const dateParts = contact.message.date.split(' ');
             return dateParts[1];
         }
     }

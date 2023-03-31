@@ -53,7 +53,7 @@
                                 </div>
                             </div>             
                             <div class="user_hour">
-                                <span class="hour_message">{{ splitDate }}</span>
+                                <span class="hour_message">{{ contact.messages[0].date.split(' ')[0] }}</span>
                             </div>
                         </div>
                     </div>
@@ -74,6 +74,14 @@
                             <i class="fa-solid fa-link"></i>
                             <i class="fa-solid fa-ellipsis-vertical"></i>
                         </div>
+                    </div>
+                    <div class="messages_section d-flex justify-content-between p-4">
+                        <div class="user_message p-2 rounded-2 mt-3">
+                            testo testo testo
+                        </div>
+                        <div class="my_message p-2 rounded-2 mt-5">
+                            testo testo testo
+                        </div>    
                     </div>
                     <div class="input_chat d-flex justify-content-between align-items-center p-2">
                         <div class="emoji_container d-flex justify-content-center align-items-center">
