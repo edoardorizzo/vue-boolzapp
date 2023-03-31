@@ -28,13 +28,11 @@
 .left_column{
     width: 40%;
     height: 100%;
-    background-color: aqua;
 }
 
 .right_column{
     width: 60%;
     height: 100%;
-    background-color: rgb(67, 146, 146);
 }
 
 .my_avatar_container{
@@ -91,7 +89,7 @@
 }
 
 .user_section{
-    height: 56px;
+    height: 55.8px;
     background-color: var(--light-grey)
 }
 
