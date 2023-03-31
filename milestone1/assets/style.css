@@ -80,11 +80,41 @@
 }
 
 .search_chat{
-    background-color: var(--light-grey);
+    background-color: white;
     height: 50px;
 }
 
 .input_search{
     width: 100%;
     height: 32px;
+}
+
+.user_section{
+    height: calc(100 / 6);
+    background-color: var(--light-grey)
+}
+
+.user_image_container{
+    width: 32px;
+    height: 32px;
+}
+
+.user_image{
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+.user_name{
+    font-size: 14px;
+}
+
+.hour_message{
+    font-size: 10px;
+    color: var(--grey);
+}
+
+.last_message_sent{
+    font-size: 10px;
+    color: var(--grey);
 }
