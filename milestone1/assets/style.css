@@ -1,0 +1,13 @@
+.background_webApp{
+    height: 100vh;
+}
+
+.top_background_webApp{
+    height: 10%;
+    background-color: rgb(0, 83, 58);
+}
+
+.bottom_background_webApp{
+    height: 90%;
+    background-color: rgb(224, 220, 177);
+}
