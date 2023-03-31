@@ -3,6 +3,8 @@
     --bg-grey: #D9DBD4;
     --grey: #B1B1B1;
     --light-grey: #EAEAEA;
+    --dark-grey: #7d7d7d;
+    --lightblue: #8EDAFC;
 }
 
 .background_webApp{
@@ -45,9 +47,38 @@
 }
 
 .general_icons{
-    width: 15%;
+    width: 20%;
 }
 
 .general_icons i{
     color: var(--grey);
+}
+
+.new_message_banner{
+    background-color: var(--lightblue);
+    height: 56px;
+}
+
+.bell_icon{
+    background-color: white;
+    width: 32px;
+    border-radius: 50%;
+}
+
+.bell_icon i{
+    color: var(--lightblue);
+}
+
+.new_message_txt_semibold{
+    font-size: 12px;
+}
+
+.new_message_txt_underline{
+    text-decoration: underline;
+    color: var(--dark-grey);
+    font-size: 12px;
+}
+
+.search_chat{
+    background-color: var(--grey);
 }
