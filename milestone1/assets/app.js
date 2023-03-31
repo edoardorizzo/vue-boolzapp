@@ -167,5 +167,11 @@
             }
         ]
       }
+    },
+    methods:{
+        spliDate (){
+            const dateParts = this.message.date.split(' ');
+            return dateParts[1];
+        }
     }
   }).mount('#app')
