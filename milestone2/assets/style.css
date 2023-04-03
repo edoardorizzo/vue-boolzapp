@@ -167,3 +167,8 @@
     background-color: var(--white);
     align-self: flex-start;
 }
+
+.my_message_new{
+    background-color: var(--light-green);
+    align-self: flex-end;
+}
