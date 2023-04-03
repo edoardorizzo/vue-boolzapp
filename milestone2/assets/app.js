@@ -169,4 +169,9 @@ createApp({
       ]
     }
   },
+  methods:{
+    netxContact(){
+        activeContact++
+    }
+  }
 }).mount('#app')
