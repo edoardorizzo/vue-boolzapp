@@ -172,3 +172,9 @@
     background-color: var(--light-green);
     align-self: flex-end;
 }
+
+/* Transition */
+
+.user_section:hover{
+    background-color: var(--light-grey);
+}

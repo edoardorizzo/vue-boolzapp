@@ -174,7 +174,7 @@ createApp({
     methods: {
         activeChat(){
             const activeChat = document.querySelector('.user_section');
-            activeChat.classList.add('active');
+            activeChat.classList.toggle('active');
             console.log(activeChat);
         },
         printMessage() {
