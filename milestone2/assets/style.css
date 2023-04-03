@@ -14,6 +14,10 @@
     height: 100vh;
 }
 
+.active{
+    background-color: var(--light-grey);
+}
+
 .boolzap_window{
     background-color: white;
     width: 900px;
@@ -92,7 +96,6 @@
 
 .user_section{
     height: 55.8px;
-    background-color: var(--white)
 }
 
 .user_image_container{
