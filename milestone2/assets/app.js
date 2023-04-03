@@ -173,7 +173,7 @@ createApp({
     methods: {
         printMessage: function () {
             const messageToSend = {
-                text: this.myMessage
+                message: this.myMessage
             }
             this.contacts.push(messageToSend)
         }
