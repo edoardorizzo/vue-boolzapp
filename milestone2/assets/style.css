@@ -92,7 +92,7 @@
 
 .user_section{
     height: 55.8px;
-    background-color: var(--light-grey)
+    background-color: var(--white)
 }
 
 .user_image_container{
@@ -150,20 +150,17 @@
 }
 
 /* messages */
-.right_messages{
-    text-align: end;
+.my_message,
+.user_message{
+    max-width: 200px;
+    font-size: 14px;
 }
 
 .my_message{
-    max-width: 200px;
     background-color: var(--light-green);
-    font-size: 14px;
-    text-align: right;
-    max-height: 40px;
+    align-self: flex-end;
 }
 .user_message{
-    max-width: 200px;
     background-color: var(--white);
-    font-size: 14px;
-    max-height: 40px;
+    align-self: flex-start;
 }

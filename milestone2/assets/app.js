@@ -3,7 +3,8 @@ const { createApp } = Vue
 createApp({
   data() {
     return {
-      contacts: [
+        activeContact: 0,
+        contacts: [
           {
               name: 'Michele',
               avatar: './assets/img/avatar_1.jpg',
@@ -167,11 +168,5 @@ createApp({
           }
       ]
     }
-  },
-  methods:{
-      splitDate(contact, message){
-          const dateParts = contact.message.date.split(' ');
-          return dateParts[1];
-      }
   }
 }).mount('#app')
