@@ -171,9 +171,6 @@ createApp({
         }
     },
     methods: {
-        activeChat() {
-            this.activeContact ++
-        },
         addMessage() {
             const printMessage = {
                 date: new Date(),
