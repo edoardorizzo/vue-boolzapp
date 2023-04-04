@@ -41,7 +41,7 @@
                     <div class="search_chat p-2">
                         <input  v-model="findChat" class="input_search border-0 rounded-1 shadow-sm" type="text" placeholder="               Cerca o inizia una nuova chat">
                     </div>
-                    <div :class="searchContacts(contact) ? 'd-block' : 'd-none'" class="user_list" :class="index === activeContact ? 'active' : ''" @click="activeContact = index"  v-for="(contact, index) in contacts">
+                    <div :class="searchContacts(contact) ? 'd-block' : 'd-none'" class="user_list" :class="index == activeContact ? .active" @click="activeContact = index"  v-for="(contact, index) in contacts">
                         <div class="user_section p-2 d-flex justify-content-between border-bottom default">
                             <div class="user_image_txt_container d-flex">
                                 <div class="user_image_container me-2">
