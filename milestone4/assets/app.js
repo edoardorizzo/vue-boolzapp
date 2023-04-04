@@ -192,9 +192,6 @@ createApp({
             }, 1000)
         },
         searchContacts(contact) {
-            if (this.findChat.trim() == '') {
-              return false;
-            }
             if (contact.name.toLowerCase().includes(this.findChat.trim().toLowerCase())) {
               return true;
             }
