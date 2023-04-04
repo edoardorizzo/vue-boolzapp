@@ -175,11 +175,19 @@ createApp({
             this.activeContact ++
         },
         addMessage() {
-            this.contacts[activeContact].messages.push({
+            console.log(this.newMessage);
+            const printMessage = {
                 date: '10/01/2020 15:30:55',
                 message: this.newMessage,
                 status: 'sent',
-            })
+            }
+            console.log(printMessage);
+            this.contacts[activeContact].messages.push(printMessage);
+            // this.contacts[activeContact].messages.push({
+            //     date: '10/01/2020 15:30:55',
+            //     message: this.newMessage,
+            //     status: 'sent',
+            // })
             this.newMessage = ''
         },
         reply() {
