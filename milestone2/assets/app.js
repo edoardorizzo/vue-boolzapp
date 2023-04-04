@@ -4,7 +4,7 @@ createApp({
     data() {
         return {
             activeContact: 0,
-            myMessage: '',
+            newMessage: '',
             userMessage: 'ok',
             contacts: [
                 {
@@ -172,18 +172,18 @@ createApp({
         }
     },
     methods: {
-        activeChat(){
+        activeChat() {
             const activeChat = document.querySelector('.user_section');
             activeChat.classList.toggle('active');
             console.log(activeChat);
         },
-        printMessage() {
-            const messageToSend = {
-              message: this.myMessage
-            };
-            this.contacts.push(messageToSend);
+        addMessage() {
+            this.contacts[activeContact].messages.push({
+                message: this.newMessage,
+                status: 'sent',
+            })
+            this.message = ''
         },
-            
     }
 
 }).mount('#app')
