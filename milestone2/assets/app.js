@@ -5,7 +5,6 @@ createApp({
         return {
             activeContact: 0,
             newMessage: '',
-            userMessage: 'ok',
             contacts: [
                 {
                     name: 'Michele',
@@ -178,12 +177,23 @@ createApp({
             console.log(activeChat);
         },
         addMessage() {
+            console.log(this.newMessage);
             this.contacts[activeContact].messages.push({
+                date: '10/01/2020 15:30:55',
                 message: this.newMessage,
                 status: 'sent',
             })
             this.message = ''
         },
+        reply() {
+            setTimeout(() => {
+                this.contacts[this.activeContact].message.push({
+                    date: '10/01/2020 15:30:55',
+                    message: 'ok',
+                    status: 'received',
+                })
+            })
+        }
     }
 
 }).mount('#app')
