@@ -175,29 +175,25 @@ createApp({
             this.activeContact ++
         },
         addMessage() {
-            console.log(this.newMessage);
             const printMessage = {
                 date: new Date(),
                 message: this.newMessage,
                 status: 'sent',
             }
-            console.log(printMessage);
-            this.contacts[activeContact].messages.push(printMessage);
-            // this.contacts[activeContact].messages.push({
-            //     date: '10/01/2020 15:30:55',
-            //     message: this.newMessage,
-            //     status: 'sent',
-            // })
+            this.contacts[this.activeContact].messages.push(printMessage);
+            this.newMessage = ''
         },
         reply() {
             setTimeout(() => {
-                this.contacts[this.activeContact].message.push({
-                    date: '10/01/2020 15:30:55',
-                    message: 'ok',
+                const recevedMessage = {
+                    date: new Date(),
+                    message: 'ok!',
                     status: 'received',
-                })
-            })
+                }
+                this.contacts[this.activeContact].messages.push(recevedMessage);
+            }, 1000)
         }
+        
     }
 
 }).mount('#app')
