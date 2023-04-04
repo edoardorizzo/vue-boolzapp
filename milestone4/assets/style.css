@@ -163,6 +163,7 @@
     background-color: var(--light-green);
     align-self: flex-end;
 }
+
 .user_message{
     background-color: var(--white);
     align-self: flex-start;

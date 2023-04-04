@@ -76,7 +76,7 @@
                         </div>
                     </div>
                     <div class="messages_section d-flex flex-column p-4">
-                        <div class="my_message p-2 rounded-2 mt-2" :class="{ my_message : message.status == 'sent', user_message : message.status == 'received' }" v-for="message in contacts[activeContact].messages">
+                        <div class="my_message p-2 rounded-2 mt-2 d-flex align-items-end" :class="{ my_message : message.status == 'sent', user_message : message.status == 'received' }" v-for="message in contacts[activeContact].messages">
                             {{ message.message }}
                         </div>
                     </div>
