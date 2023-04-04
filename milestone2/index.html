@@ -42,7 +42,7 @@
                         <input class="input_search border-0 rounded-1 shadow-sm" type="search" placeholder="               Cerca o inizia una nuova chat">
                     </div>
                     <div class="user_list">
-                        <div class="user_section p-2 d-flex justify-content-between border-bottom default" @click="activeChat" v-for="contact in contacts">
+                        <div  class="user_section p-2 d-flex justify-content-between border-bottom default" @click="activeChat" v-for="contact in contacts">
                             <div class="user_image_txt_container d-flex">
                                 <div class="user_image_container me-2">
                                     <img class="user_image" :src="contact.avatar">

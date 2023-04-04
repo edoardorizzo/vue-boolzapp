@@ -172,10 +172,8 @@ createApp({
     },
     methods: {
         activeChat() {
-            const activeChat = document.querySelector('.user_section');
-            activeChat.classList.toggle('active');
-            console.log(activeChat);
-        },
+            this.activeContact ++
+          }
     }
 
 }).mount('#app')

@@ -172,18 +172,15 @@ createApp({
     },
     methods: {
         activeChat() {
-            const activeChat = document.querySelector('.user_section');
-            activeChat.classList.toggle('active');
-            console.log(activeChat);
+            this.activeContact ++
         },
         addMessage() {
-            console.log(this.newMessage);
             this.contacts[activeContact].messages.push({
                 date: '10/01/2020 15:30:55',
                 message: this.newMessage,
                 status: 'sent',
             })
-            this.message = ''
+            this.newMessage = ''
         },
         reply() {
             setTimeout(() => {
