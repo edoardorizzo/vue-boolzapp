@@ -5,6 +5,7 @@ createApp({
         return {
             activeContact: 0,
             newMessage: '',
+            findChat: '',
             contacts: [
                 {
                     name: 'Michele',
@@ -189,8 +190,18 @@ createApp({
                 }
                 this.contacts[this.activeContact].messages.push(recevedMessage);
             }, 1000)
-        }
-        
+        },
+        searchContacts(contact) {
+            if (this.findChat.trim() == '') {
+              return false;
+            }
+            if (contact.name.toLowerCase().includes(this.findChat.trim().toLowerCase())) {
+              return true;
+            }
+            else {
+              return false;
+            }
+          },
     }
 
 }).mount('#app')
