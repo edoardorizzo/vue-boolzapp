@@ -177,7 +177,7 @@ createApp({
         addMessage() {
             console.log(this.newMessage);
             const printMessage = {
-                date: '10/01/2020 15:30:55',
+                date: new Date(),
                 message: this.newMessage,
                 status: 'sent',
             }
@@ -188,7 +188,6 @@ createApp({
             //     message: this.newMessage,
             //     status: 'sent',
             // })
-            this.newMessage = ''
         },
         reply() {
             setTimeout(() => {
